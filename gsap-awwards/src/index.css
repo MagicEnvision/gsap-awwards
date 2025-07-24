@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
 @import "tailwindcss";
-
-/* template for utility classes
- @utility flex-center {
-      @apply flex justify-center;
-} */
-
 
 @font-face {
     font-family: "Modern Negra";
@@ -20,10 +15,8 @@
     --font-serif: "DM Serif Text", serif;
 }
 
-
-
+html,
 body {
-  
     width: 100%;
     background-color: black;
     color: white;
@@ -223,7 +216,7 @@ body {
         }
 
         .top-grid {
-            @apply grid grid-cols-1 xl:grid-cols-12 gap-5 mb-5 md:px-0 px-5 
+            @apply grid grid-cols-1 xl:grid-cols-12 gap-5 mb-5 md:px-0 px-5;
 
             > div {
                 @apply rounded-3xl overflow-hidden h-72 relative;

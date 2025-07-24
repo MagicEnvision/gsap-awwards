@@ -5,20 +5,20 @@ import { gsap } from 'gsap'
 
 const NavBar = () => {
     useGSAP(()=> {
-        const navTween =gsap.timeline({
+        const navTween = gsap.timeline({
             scrollTrigger: {
                 trigger: 'nav',
-                start: 'bottom top'
+                start: 'top top'
+                
             }
         })
 
         navTween.fromTo('nav', {backgroundColor: 'transparent'}, {
-            backgroundColor: '#00000050',
-            backgroundFilter: 'blur(10px)',
-            duration: 1,
+            backdropFilter: 'blur(10px)',
+            duration: 0.5,
             ease: 'power1.inOut'
         })
-    })
+    }, [])
 
   return (
     <nav>
@@ -32,7 +32,6 @@ const NavBar = () => {
                 {navLinks.map((link) => (
                     <li key={link.id}>
                         <a href={`#${link.id}`}>{link.title}</a>
-                    
                     </li>
                 ))}                
             </ul>

@@ -1,6 +1,14 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { SplitText } from 'gsap/all'
 import React from 'react'
 
 const About = () => {
+    useGSAP(() => {
+
+       
+
+    })
   return (
     <div id='about'>
         <div className='mb-16 md:px-0 px-5'>
